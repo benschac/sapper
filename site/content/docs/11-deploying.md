@@ -5,18 +5,18 @@ title: Deployment
 Sapper apps run anywhere that supports Node 8 or higher.
 
 
-### Deploying to Now
+### Deploying to Vercel (previously Now)
 
-> This section relates to Now 1, not Now 2
+> This section relates to Vercel 1, not Vercel 2
 
-We can very easily deploy our apps to [Now][]:
+We can very easily deploy our apps to [Vercel][]:
 
 ```bash
 npm install -g now
 now
 ```
 
-This will upload the source code to Now, whereupon it will do `npm run build` and `npm start` and give you a URL for the deployed app.
+This will upload the source code to Vercel, whereupon it will do `npm run build` and `npm start` and give you a URL for the deployed app.
 
 For other hosting environments, you may need to do `npm run build` yourself.
 
@@ -61,4 +61,4 @@ When deploying to [Now][], you can pass the environment variable into Now itself
 now -e SAPPER_TIMESTAMP=$(date +%s%3N)
 ```
 
-[Now]: https://zeit.co/now
+[Vercel]: https://vercel.com/home
